@@ -8,14 +8,14 @@
         </div>
         <div class="post-bottom">
           <div class="post-left">
-            <img src="<%= "/user_images/#{post.user.image_name}" %>">
+            <%= link_to image_tag("/user_images/#{post.user.image_name}"), "/users/#{post.user.id}" %>
           </div>
 
           <div class="post-right">
             <div class="post-user-name">
               <%= link_to(post.user.name, "/users/#{post.user.id}") %>
             </div>
-            <%= link_to(post.cafe, "/posts/#{post.id}") %>
+            『<%= link_to(post.cafe, "/posts/#{post.id}") %>』
           </div>
         </div>
 

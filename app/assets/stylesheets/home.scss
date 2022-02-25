@@ -38,7 +38,7 @@ form input[type="submit"] {
 /* 共通レイアウト */
 body {
 	color: #2d3133;
-	background-color: #3ecdc6;
+	background-color: #264962;
 	margin: 0;
 	min-height: 1vh;
 }
@@ -66,6 +66,7 @@ header {
 	position: absolute;
 	z-index: 1;
 	width: 100%;
+	background-color: #264962;
 }
 
 .header-logo {
@@ -113,9 +114,32 @@ header {
 	font-size: 13px;
 }
 
+.header_user_icon {
+	width: 10%;
+	height: 64px;
+	display: flex;
+	align-items: center;
+}
+
+.header_user_icon a {
+	display: contents;
+	height: 64px;
+}
+
+.header_user_icon img {
+	width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    box-shadow: 0 2px 6px #656C70;
+    object-fit: cover;
+}
+
 /* トップ */
 .top-main {
-	padding: 200px 0 100px;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+	align-items: center;
 	text-align: center;
 	position: absolute;
 	top: 0;
@@ -123,7 +147,7 @@ header {
 	height: auto;
 	min-height: 100%;
 	color: white;
-	background-color: #3ecdc6;
+	background-color: #264962;
 	background-repeat: no-repeat;
 	background-position: center 50%;
 	background-size: cover;
@@ -144,6 +168,15 @@ header {
 
 .top-main p {
 	font-size: 24px;
+}
+
+.top-logo {
+	width: 15%;
+	height: 15%;
+}
+
+.top-logo img {
+	width: 100%;
 }
 
 /* 紹介 */
@@ -208,7 +241,7 @@ header {
 }
 
 .form input[type="submit"] {
-	background-color: #3ecdc6;
+	background-color: #264962;
 	color: white;
 	cursor: pointer;
 	font-weight: 300;
